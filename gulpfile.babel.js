@@ -19,8 +19,8 @@ const DIR = {
 const SRC = {
   SERVER : 'src/app.js',
   JS : `${DIR.SRC[0]}/js/**/*.js`,
-  CSS : `${DIR.SRC[0]}/css/*.css`,
-  IMG : `${DIR.SRC[0]}/image/**`,
+  CSS : `${DIR.SRC[0]}/css/**/*.css`,
+  IMG : `${DIR.SRC[0]}/img/**`,
   FONT : `${DIR.SRC[0]}/fonts/**`,
   PUG : `${DIR.SRC[1]}/**/*.pug`,
   CONVERSION : `${DIR.SRC[2]}/`
@@ -29,7 +29,7 @@ const DEST = {
   SERVER : 'dist/',
   JS : `${DIR.DEST[0]}/js/`,
   CSS : `${DIR.DEST[0]}/css/`,
-  IMG : `${DIR.DEST[0]}/image/`,
+  IMG : `${DIR.DEST[0]}/images/`,
   FONT : `${DIR.DEST[0]}/fonts/`,
   PUG : `${DIR.DEST[1]}/`,
   RESULT : `${DIR.DEST[2]}/`,

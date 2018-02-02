@@ -1,18 +1,56 @@
 doctype html
 //[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]
 //[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]
-html
+//[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]
+//[if gt IE 8]><!
+html.no-js(lang='en')
+  //<![endif]
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width,initial-scale=1')
     meta(name='description', content='free catus Template')
     meta(name='keywords', content='free bootstrap, html5, css3, responsive')
+    link(rel='icon', type='image/png', href='favicon.ico')
     block title
     block font 
+      link(href='https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
     block css 
+      link(rel='stylesheet', href='public/css/slick/slick.css')
+      link(rel='stylesheet', href='public/css/slick/slick-theme.css')
+      link(rel='stylesheet', href='public/css/animate.css')
+      link(rel='stylesheet', href='public/css/iconfont.css')
+      link(rel='stylesheet', href='public/css/font-awesome.min.css')
+      link(rel='stylesheet', href='public/css/bootstrap.css')
+      link(rel='stylesheet', href='public/css/magnific-popup.css')
+      link(rel='stylesheet', href='public/css/bootsnav.css')
+      // xsslider slider css 
+      //<link rel="stylesheet" href="public/css/xsslider.css">
+      //For Plugins external css
+      //<link rel="stylesheet" href="public/css/plugins.css" />
+      //Theme custom css 
+      link(rel='stylesheet', href='public/css/style.css')
+      //<link rel="stylesheet" href="public/css/colors/maron.css">
+      //Theme Responsive css
+      link(rel='stylesheet', href='public/css/responsive.css')
     block script 
-  body
+      script(src='public/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' defer)
+      script(src='public/js/vendor/jquery-1.11.2.min.js' defer)
+      script(src='public/js/vendor/bootstrap.min.js' defer)
+      script(src='public/js/owl.carousel.min.js' defer)
+      script(src='public/js/jquery.magnific-popup.js' defer)
+      script(src='public/js/jquery.easing.1.3.js' defer)
+      script(src='public/js/slick.js' defer)
+      script(src='public/js/slick.min.js' defer)
+      script(src='public/js/jquery.collapse.js' defer)
+      script(src='public/js/bootsnav.js' defer)
+      script(src='public/js/plugins.js' defer)
+      script(src='public/js/main.js' defer)
+  body(data-spy='scroll', data-target='.navbar-collapse')
+    block preloader
+      include ../include/preloader.pug
     block header
+      include ../include/header.pug
     block section 
     block footer
+      include ../include/footer.pug

@@ -1,0 +1,70 @@
+nav.navbar.navbar-default.bootsnav.navbar-fixed
+  // Start Top Search 
+  .top-search
+    .container
+      .input-group
+        span.input-group-addon
+          i.fa.fa-search
+        input.form-control(type='text', placeholder='Search')
+        span.input-group-addon.close-search
+          i.fa.fa-times
+  // End Top Search 
+  .container
+    .attr-nav
+      ul
+        li.search
+          a(href='#')
+            i.fa.fa-search
+    // Start Header Navigation 
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-menu')
+        i.fa.fa-bars
+      a.navbar-brand(href='#brand')
+        img.logo(src='public/images/logo.png', alt='')
+        //<img src="public/images/footer-logo.png" class="logo logo-scrolled" alt="">
+    // End Header Navigation 
+    // navbar menu 
+    .collapse.navbar-collapse#navbar-menu
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='#home') 홈 
+        li
+          a(href='#features') 병원소개 
+        li
+          a(href='#business') 진료과 
+        li
+          a(href='#test') 전문의 
+        li
+          a(href='#product') 후기 
+        li
+          a(href='#contact') 문의 및 정보 
+    // /.navbar-collapse 
+  .navbar-top.bg-grey.fix
+    .container
+      .row
+        .col-md-6
+          .navbar-callus.text-left.sm-text-center
+            ul.list-inline
+              li
+                a(href='')
+                  i.fa.fa-phone
+                  |  카카오톡 ID : 캐터스 웹사이트 제작소 
+              li
+                a(href='')
+                  i.fa.fa-envelope-o
+                  |  페이스북 ID : 캐터스 병원
+        .col-md-6
+          .navbar-socail.text-right.sm-text-center
+            ul.list-inline
+              li
+                a(href='')
+                  i.fa.fa-facebook
+              li
+                a(href='')
+                  i.fa.fa-twitter
+              li
+                a(href='')
+                  i.fa.fa-instagram
+              li
+                a(href='')
+                  i.fa.fa-youtube
